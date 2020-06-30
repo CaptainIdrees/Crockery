@@ -1,0 +1,51 @@
+section {
+    margin-bottom: 10vh;
+}
+
+.container {
+    max-width: 1600px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.desc {
+    width: 300px;
+    margin-left: auto;
+}
+
+.desc h1 {
+    font-style: italic;
+}
+
+#btn-up {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+#btn-up i {
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    .desc {
+        margin-top: -25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        display: flex;
+    }
+    .image {
+        width: 67%;
+    }
+    .desc {
+        margin: 0;
+        align-self: flex-end;
+    }
+}

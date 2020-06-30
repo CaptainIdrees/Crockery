@@ -1,0 +1,107 @@
+.slick-dots {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li {
+    margin: 0 .5rem !important;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 3px 2px;
+    font-size: 0;
+}
+
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    text-indent: -999px;
+    border-radius: 100%;
+    transition: none;
+    box-shadow: none;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+    background-color: var(--dark);
+}
+
+.bg {
+    height: calc(100vh - 82px);
+    background-image: url(/assets/images/Home_page.png);
+    background-size: cover;
+    background-position: 25% 5%;
+    background-color: #a5a5a5;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.desc {
+    width: 300px;
+    color: var(--background);
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.desc h1 {
+    color: var(--background);
+}
+
+.desc p {
+    margin-bottom: 1rem;
+}
+
+.desc a {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--primary);
+    background: var(--background);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.desc a:hover {
+    color: var(--background);
+    background: var(--primary);
+}
+
+@media screen and (min-width: 576px) {
+    .desc {
+        margin-right: 10%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .desc {
+        width: 350px;
+    }
+    .desc h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .desc {
+        margin-right: 13%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .desc {
+        margin-top: 6%;
+        margin-right: 15%;
+    }
+}

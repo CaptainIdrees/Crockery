@@ -1,0 +1,110 @@
+section {
+    margin-bottom: 5%;
+}
+
+/* Hero Sec
+-------------------------------------------------- */
+
+#hero-sec {
+    height: calc(100vh - 82px);
+    background-image: url(/assets/images/Product1.png);
+    background-size: cover;
+    background-position: 25% 5%;
+    background-color: #a5a5a5;
+    background-blend-mode: multiply;
+}
+
+#hero-sec .container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+#hero-sec .desc {
+    width: 400px;
+    margin-bottom: 10vh;
+}
+
+#hero-sec .desc p {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: var(--background);
+}
+
+#hero-sec .desc a {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--primary);
+    background: var(--background);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#hero-sec .desc a:hover {
+    color: var(--background);
+    background: var(--primary);
+}
+
+#hero-sec .btn-down {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -21px;
+    color: var(--background);
+}
+
+#hero-sec .btn-down:hover {
+    color: var(--primary);
+}
+
+#hero-sec .btn-down i {
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    #hero-sec .btn-down {
+        bottom: 5%;
+    }
+}
+
+/* Products Sec
+-------------------------------------------------- */
+
+#listing-sec {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listing-sec .container {
+    margin: 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#listing-sec .item {
+    padding: 1rem;
+    width: 100%;
+}
+
+#listing-sec img {
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    #listing-sec .item {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #listing-sec .item {
+        width: 30%;
+    }
+}

@@ -1,0 +1,87 @@
+section {
+    height: calc(100vh - 82px);
+    background-image: url(/assets/images/Contact2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -120px;
+}
+
+.text-container{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: #fff;
+}
+
+.text-container h1{
+    color: #fff;
+}
+
+.text-container p{
+    margin-bottom: 10px;
+}
+
+.text-container p i{
+    font-size: 1.3rem;
+}
+
+.form-container{
+    font-family: Lato;
+    width: 400px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 5px 0px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: none;
+}
+
+.form-inline{
+    width: 48%;
+}
+
+.mr-2{
+    margin-right: 11px;
+}
+
+.btn-submit{
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 5px 15px;
+    float: right;
+    transition: all .4s;
+}
+
+.btn-submit:hover{
+    background-color: tomato;
+}
+
+@media screen and (max-width: 950px) {
+    .text-container {
+        top: 90px;
+        left: 15px;
+    }
+    section {
+        background-position-y: 0px;
+    }
+    .text-container h1 {
+        font-size: 30px;
+    }
+    .form-container {
+        top: 313px;
+        bottom: 50px;
+        right: 20px;
+    }
+}
