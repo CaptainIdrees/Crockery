@@ -1,118 +1,121 @@
 section {
-    height: calc(100vh - 82px);
-    background-image: url(/assets/images/Contact2.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height               : calc(100vh - 82px);
+    background-image     : url(/assets/images/Contact2.png);
+    background-size      : 100%;
+    background-repeat    : no-repeat;
     background-position-y: -100px;
 }
 
-.text-container{
+.text-container {
     position: absolute;
-    top: 150px;
-    left: 80px;
-    color: #ece2d5;
+    top     : 150px;
+    left    : 80px;
+    color   : #ece2d5;
 }
 
 .text-container h1 {
-    color: #ece2d5;
+    color    : #ece2d5;
     font-size: 3rem;
 }
 
-.text-container p.first{
+.text-container p.first {
     margin-bottom: 10px;
 }
 
-.text-container p{
+.text-container p {
     line-height: 30px;
 }
 
-.text-container p i{
+.text-container p i {
     font-size: 1.3rem;
 }
 
 .form-container {
     font-family: Lato;
-    width: 420px;
-    position: absolute;
-    bottom: 25px;
-    right: 3%;
+    width      : 420px;
+    position   : absolute;
+    bottom     : 25px;
+    right      : 3%;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 10px;
 }
 
 .form-control {
-    width: 100%;
-    padding: 5px 0px;
-    padding-left: 10px;
+    width        : 100%;
+    padding      : 5px 0px;
+    padding-left : 10px;
     border-radius: 2px;
-    border: none;
+    border       : none;
 }
 
-.form-inline{
+.form-inline {
     width: 48%;
 }
 
-.mr-2{
+.mr-2 {
     margin-right: 3.1%;
 }
 
-.btn-submit{
-    cursor: pointer;
-    border-radius: 4px;
-    color: #fff;
+.btn-submit {
+    cursor          : pointer;
+    border-radius   : 4px;
+    color           : #fff;
     background-color: #000;
-    border: none;
-    padding: 5px 15px;
-    float: right;
-    transition: all .4s;
+    border          : none;
+    padding         : 5px 15px;
+    float           : right;
+    transition      : all .4s;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
     background-color: tomato;
 }
 
 @media screen and (max-width: 960px) {
-    section{
+    section {
         background-position-y: -50px;
     }
+
     .text-container h1 {
         font-size: 2rem;
     }
+
     .text-container p {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    section{
+    section {
         background-position-y: 0px;
     }
 
-    .form-container{
+    .form-container {
         width: 380px;
     }
 }
 
 @media screen and (max-width: 668px) {
-    .text-container{
-        top: 90px;
+    .text-container {
+        top : 90px;
         left: 20px;
     }
 }
 
-@media screen and (max-width: 540px){
-	.text-container {
-		top: 355px;
-		left: 20px;
-		color: #000;
-}
-	.text-container h1 {
-		color: tomato;
-}
-	.form-container {
-		bottom: -240px;
-		width: 93%;
-}
+@media screen and (max-width: 540px) {
+    .text-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .text-container p {
+        line-height: 18px;
+    }
+
+    .form-container {
+        bottom: 15px;
+        left  : auto;
+        width : 75%;
+    }
 }
