@@ -3,34 +3,39 @@ section {
     background-image: url(/assets/images/Contact2.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position-y: -120px;
+    background-position-y: -100px;
 }
 
 .text-container{
     position: absolute;
     top: 150px;
-    left: 50px;
-    color: #fff;
+    left: 80px;
+    color: #ece2d5;
 }
 
-.text-container h1{
-    color: #fff;
+.text-container h1 {
+    color: #ece2d5;
+    font-size: 3rem;
+}
+
+.text-container p.first{
+    margin-bottom: 10px;
 }
 
 .text-container p{
-    margin-bottom: 10px;
+    line-height: 30px;
 }
 
 .text-container p i{
     font-size: 1.3rem;
 }
 
-.form-container{
+.form-container {
     font-family: Lato;
-    width: 400px;
+    width: 420px;
     position: absolute;
-    bottom: 50px;
-    right: 20px;
+    bottom: 25px;
+    right: 3%;
 }
 
 .form-group{
@@ -50,7 +55,7 @@ section {
 }
 
 .mr-2{
-    margin-right: 11px;
+    margin-right: 3.1%;
 }
 
 .btn-submit{
@@ -68,20 +73,46 @@ section {
     background-color: tomato;
 }
 
-@media screen and (max-width: 950px) {
-    .text-container {
-        top: 90px;
-        left: 15px;
-    }
-    section {
-        background-position-y: 0px;
+@media screen and (max-width: 960px) {
+    section{
+        background-position-y: -50px;
     }
     .text-container h1 {
-        font-size: 30px;
+        font-size: 2rem;
     }
-    .form-container {
-        top: 313px;
-        bottom: 50px;
-        right: 20px;
+    .text-container p {
+        font-size: 14px;
     }
+}
+
+@media screen and (max-width: 800px) {
+    section{
+        background-position-y: 0px;
+    }
+
+    .form-container{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .text-container{
+        top: 90px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 540px){
+	.text-container {
+		top: 355px;
+		left: 20px;
+		color: #000;
+}
+	.text-container h1 {
+		color: tomato;
+}
+	.form-container {
+		bottom: -240px;
+		width: 93%;
+}
 }
