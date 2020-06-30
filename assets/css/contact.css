@@ -105,17 +105,29 @@ section {
 }
 
 @media screen and (max-width: 540px) {
+
+    .text-container{
+        left: 10px;
+    }
     .text-container h1 {
         font-size: 1.2rem;
     }
 
     .text-container p {
         line-height: 18px;
+        font-size: 12px;
+    }
+
+    .text-container p i {
+        font-size: 1rem;
     }
 
     .form-container {
         bottom: 15px;
         left  : auto;
         width : 75%;
+    }
+    .mr-2{
+        margin-right: 2%;
     }
 }
