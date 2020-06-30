@@ -7,7 +7,7 @@ section {
 
 #hero-sec {
     height: calc(100vh - 82px);
-    background-image: url(/assets/images/Product1.png);
+    background-image: url(../images/Product1.png);
     background-size: cover;
     background-position: 25% 5%;
     background-color: #a5a5a5;

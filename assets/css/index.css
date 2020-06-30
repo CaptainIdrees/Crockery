@@ -37,7 +37,7 @@
 
 .bg {
     height: calc(100vh - 82px);
-    background-image: url(/assets/images/Home_page.png);
+    background-image: url(../images/Home_page.png);
     background-size: cover;
     background-position: 25% 5%;
     background-color: #a5a5a5;

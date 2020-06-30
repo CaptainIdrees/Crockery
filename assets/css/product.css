@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--primary);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 15%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 15%);
 }
 
 .image::after {
@@ -22,8 +22,8 @@
     width: 100%;
     height: 100%;
     left: 0;
-    background-image: url(/assets/images/Product4.png);
-    background-size: 90%;
+    background-image: url(../images/single.png);
+    background-size: 45%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -37,21 +37,26 @@
 .desc {
     width: 300px;
     padding-left: 2rem;
+    margin-top: -22%;
 }
 
 .desc p {
     margin-bottom: 1rem;
 }
 
+.desc img{
+    margin-bottom: 30px;
+}
+
 @media screen and (min-width: 576px) {
     .image::after {
-        background-size: 70%;
+        background-size: 40%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .image::after {
-        background-size: 50%;
+        background-size: 30%;
     }
     .desc {
         margin-top: -25%;
@@ -61,10 +66,10 @@
 
 @media screen and (min-width: 992px) {
     .image::after {
-        background-position: right 20% center;
+        background-position: right 35% center;
     }
     .desc {
-        margin-top: -40%;
+        margin-top: -33%;
     }
     .desc h1 {
         font-size: 3rem;
@@ -76,7 +81,7 @@
 
 @media screen and (min-width: 1200px) {
     .image::after {
-        background-position: right 30% center;
+        background-position: right 40% center;
     }
     .desc {
         margin-top: -50vh;
