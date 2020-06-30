@@ -1,41 +1,32 @@
-section {
-    height               : calc(100vh - 82px);
-    background-image     : url(/assets/images/Contact2.png);
-    background-size      : 100%;
-    background-repeat    : no-repeat;
-    background-position-y: -100px;
+section img {
+    width: 100%;
 }
 
 .text-container {
+    color   : #fff;
     position: absolute;
-    top     : 150px;
-    left    : 80px;
-    color   : #ece2d5;
+    top     : 90px;
+    left    : 10px;
 }
 
 .text-container h1 {
-    color    : #ece2d5;
-    font-size: 3rem;
+    color    : #fff;
+    font-size: 18px;
+}
+
+.text-container p {
+    font-size: 12px;
 }
 
 .text-container p.first {
     margin-bottom: 10px;
 }
 
-.text-container p {
-    line-height: 30px;
-}
-
-.text-container p i {
-    font-size: 1.3rem;
-}
-
 .form-container {
-    font-family: Lato;
-    width      : 420px;
-    position   : absolute;
-    bottom     : 25px;
-    right      : 3%;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-group {
@@ -55,17 +46,18 @@ section {
 }
 
 .mr-2 {
-    margin-right: 3.1%;
+    margin-right: 3%;
 }
 
 .btn-submit {
+    display: block;
+    margin-left: auto;
     cursor          : pointer;
     border-radius   : 4px;
     color           : #fff;
     background-color: #000;
     border          : none;
     padding         : 5px 15px;
-    float           : right;
     transition      : all .4s;
 }
 
@@ -73,61 +65,52 @@ section {
     background-color: tomato;
 }
 
-@media screen and (max-width: 960px) {
-    section {
-        background-position-y: -50px;
+@media screen and (min-width: 668px) {
+    .text-container {
+        top: 110px;
+        left: 30px;
     }
-
+    .form-container {
+        width: 60%;
+        margin-top: -110px;
+        margin-right: 2%;
+    }
     .text-container h1 {
         font-size: 2rem;
     }
-
     .text-container p {
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 800px) {
-    section {
-        background-position-y: 0px;
+@media screen and (min-width: 960px) {
+    .text-container p{
+        line-height: 30px;
     }
-
     .form-container {
-        width: 380px;
+        width: 40%;
+        margin-top: -245px;
+        margin-right: 2%;
     }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (min-width: 1050px) {
     .text-container {
-        top : 90px;
-        left: 20px;
+        top: 190px;
+        left: 60px;
     }
-}
-
-@media screen and (max-width: 540px) {
-
-    .text-container{
-        left: 10px;
+    .text-container h1{
+        font-size: 3rem;
     }
-    .text-container h1 {
-        font-size: 1.2rem;
-    }
-
-    .text-container p {
-        line-height: 18px;
-        font-size: 12px;
-    }
-
-    .text-container p i {
+    .text-container p{
         font-size: 1rem;
     }
-
-    .form-container {
-        bottom: 15px;
-        left  : auto;
-        width : 75%;
+    .text-container p i{
+        font-size: 1.3rem;
     }
-    .mr-2{
+    .form-container {
+        width: 32%;
+        margin-top: -410px;
         margin-right: 2%;
     }
 }
